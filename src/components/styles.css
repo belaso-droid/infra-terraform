@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+code {
+  font-family: monospace;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: #f0f0f0;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+code pre {
+  padding: 0;
+}
+
+code pre code {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+button:active {
+  background-color: #ccc;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ccc;
+}
+
+input[type="radio"] {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #ccc;
+}
