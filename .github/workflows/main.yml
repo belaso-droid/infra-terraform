@@ -1,0 +1,26 @@
+name: Terraform Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Terraform
+        uses: hashicorp/terraform-github-actions@v1.0.0
+        with:
+          terraform_version: '1.1.4'
+          terraform_backend: 'false'
+      - name: Run Terraform init
+        run: terraform init
+      - name: Run Terraform apply
+        run: terraform apply -auto-approve
+      - name: Print result
+        run: |
+          echo "Terraform apply completed"
